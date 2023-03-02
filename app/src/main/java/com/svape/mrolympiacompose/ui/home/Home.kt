@@ -12,6 +12,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -19,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.rememberAsyncImagePainter
+import com.svape.mrolympiacompose.core.Constants.LIST_TEST_TAG
 import com.svape.mrolympiacompose.data.api.model.ClassicPhysique
 
 
@@ -39,7 +41,7 @@ fun HomeSc() {
             textAlign = TextAlign.Center,
             modifier = Modifier.padding(16.dp)
         )
-        LazyColumn {
+        LazyColumn (modifier = Modifier.testTag(LIST_TEST_TAG)) {
             if (state.isEmpty()) {
                 item {
                     CircularProgressIndicator(
