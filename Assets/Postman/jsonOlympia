@@ -1,0 +1,143 @@
+{
+    "Open": [
+        {
+            "id": 1,
+            "name": "Hadi Choopan",
+            "Birth": 1987,
+            "nationality": "Iranian",
+            "imageTa": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Hadi_choopaan.jpg/320px-Hadi_choopaan.jpg",
+            "imageP": "https://i.pinimg.com/736x/1d/47/8d/1d478deb62fccdf9dd96f02f2ac47ed0.jpg",
+            "win_mister_olympia": "2022"
+        },
+        {
+            "id": 2,
+            "name": "Mamdouh Mohammed Hassan Elssbiay",
+            "Birth": 1984,
+            "nationality": "Egyptian",
+            "imageTa": "https://i.pinimg.com/736x/25/60/ce/2560ce03d542341b0234d0a38ebd01bc.jpg",
+            "imageP": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Big_Ramy2.png/320px-Big_Ramy2.png",
+            "win_mister_olympia": "2020, 2021"
+        },
+        {
+            "id": 3,
+            "name": "Brandon Curry",
+            "Birth": 1982,
+            "nationality": "American",
+            "imageTa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdfbnvW7ywlxWiiToE9tgEAkE_11TBzCJnvlJtFiCjYwKZeS5X2lIDkp3ZX7Ajk45Bvvc&usqp=CAU",
+            "imageP": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNehsx_Jt5nHJcAzUYondkYzr_mreI7N8v_1WOJYN_kE5K0VIDh6PNck9-RzSPymIAlg4&usqp=CAU",
+            "win_mister_olympia": "2019"
+        },
+        {
+            "id": 4,
+            "name": "Shawn Rhoden",
+            "Birth": 1975,
+            "nationality": "Jamaican",
+            "imageTa": "https://fitnessvolt.com/wp-content/uploads/2019/07/shawn-rhoden-mr-olympia-750x750.jpg",
+            "imageP": "https://upload.wikimedia.org/wikipedia/commons/3/30/Shawn_Rhoden.jpg",
+            "win_mister_olympia": "2018"
+        },
+        {
+            "id": 5,
+            "name": "Phil Heath",
+            "Birth": 1979,
+            "nationality": "American",
+            "imageTa": "https://terezowens.com/wp-content/uploads/2017/09/21688523_359709777775323_3064721150111121408_n.jpg",
+            "imageP": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Phil_Heath.JPG",
+            "win_mister_olympia": "2011, 2012, 2013, 2014, 2015, 2016, 2017"
+        }
+    ],
+    "Legends": [
+        {
+            "id": 1,
+            "name": "Lee Haney",
+            "Birth": 1959,
+            "nationality": "American",
+            "imageTa": "https://www.cambiatufisico.com/wp-content/uploads/dieta-lee-haney-1.jpg",
+            "imageP": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Lee_Haney.jpg",
+            "win_mister_olympia": "1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991"
+        },
+        {
+            "id": 2,
+            "name": "Ronnie Coleman",
+            "Birth": 1964,
+            "nationality": "American",
+            "imageTa": "https://bodegafitness.com/wp-content/uploads/2020/05/ec1a3e04f4b1bdb7608f4ea198106380.jpg",
+            "imageP": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ronnie-coleman-attends-the-arnold-sports-festival-2015-day-news-photo-1662213727.jpg?crop=0.938xw:0.883xh;0,0.117xh&resize=1200:*",
+            "win_mister_olympia": "1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005"
+        },
+        {
+            "id": 3,
+            "name": "Arnold Schwarzenegger",
+            "Birth": 1947,
+            "nationality": "Austrian",
+            "imageTa": "https://media.newyorker.com/photos/624f484bb8900d61c847f8d7/master/w_2560%2Cc_limit/Long-Butler-09.jpg",
+            "imageP": "https://i.ebayimg.com/images/g/UYcAAOxyGwNTDKxr/s-l500.jpg",
+            "win_mister_olympia": "1970, 1971, 1972, 1973, 1974, 1975, 1980"
+        },
+        {
+            "id": 4,
+            "name": "Jay Cutler",
+            "Birth": 1973,
+            "nationality": "American",
+            "imageTa": "https://image-cdn.essentiallysports.com/wp-content/uploads/photo_2022-10-20_17-27-49.jpg",
+            "imageP": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jay_Cutler_bodybuilder_2008-crop.jpg/320px-Jay_Cutler_bodybuilder_2008-crop.jpg",
+            "win_mister_olympia": "2006, 2007, 2009, 2010"
+        },
+        {
+            "id": 5,
+            "name": "Dorian Yates",
+            "Birth": 1962,
+            "nationality": "English",
+            "imageTa": "https://revolutionaryprogramdesign.com/wp-content/uploads/2020/07/Dorian-Yates-Shoulders-Triceps-e1665681428708.jpg",
+            "imageP": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dorian-yates-1655453358.jpg",
+            "win_mister_olympia": "1992, 1993, 1994, 1995, 1996, 1997"
+        }
+    ],
+    "Classic-Physique": [
+        {
+            "id": 1,
+            "name": "Danny Hester",
+            "Birth": 1948,
+            "nationality": "American",
+            "imageTa": "https://oldschoollabs.com/wp-content/uploads/2017/09/Danny-Hester.jpg",
+            "imageP": "https://www.wellnessblvd.com/wp-content/uploads/2021/08/danny-hester-03.jpeg",
+            "win_mister_olympia": "2016"
+        },
+        {
+            "id": 2,
+            "name": "Breon Ansley",
+            "Birth": 1979,
+            "nationality": "American",
+            "imageTa": "https://fitnessvolt.com/wp-content/uploads/2018/08/Breon-Ansley-853x1024.jpg",
+            "imageP": "https://i1.wp.com/www.thebarbell.com/wp-content/uploads/2022/11/Breon-Ansley-workout.png?fit=893%2C754&ssl=1",
+            "win_mister_olympia": "2017, 2018"
+        },
+        {
+            "id": 3,
+            "name": "Chris Bumstead",
+            "Birth": 1995,
+            "nationality": "Canadian",
+            "imageTa": "https://img.fresherslive.com/latestnews/images/articles/origin/2022/12/20/chris-bumstead-biography-age-height-and-weight-63a15c0ed9cd7-1671519246.jpg",
+            "imageP": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfFPDhbYVA-Q_t9DYjO0TcmOpM6nFd7bGfSVLt8AIYYyED99_3HpMFaMsJreKAA2K2CVk&usqp=CAU",
+            "win_mister_olympia": "2019, 2020, 2021, 2022"
+        },
+        {
+            "id": 4,
+            "name": "Ramon Dino",
+            "Birth": 1995,
+            "nationality": "Brazilian",
+            "imageTa": "https://pbs.twimg.com/media/FNG1zhQXwAQ_Ns7.jpg",
+            "imageP": "https://pbs.twimg.com/media/FDQafLYVIAgylc-.jpg",
+            "win_mister_olympia": "In coming..."
+        },
+        {
+            "id": 5,
+            "name": "Urs Kalecinski",
+            "Birth": 1998,
+            "nationality": "German",
+            "imageTa": "https://tikkaykhan.com/wp-content/uploads/2021/11/Early-Life-of-Urs-Kalecinski-1024x1024.png",
+            "imageP": "https://www.american-supps.com/mediafiles/Bilder/urs-kalecinski.jpg",
+            "win_mister_olympia": "In coming..."
+        }
+    ]
+}
