@@ -54,7 +54,7 @@ Also, __[follow me](https://github.com/Enrique213-VP)__ on GitHub for my next cr
 ## Screens for demo project
 In this case, a mock server in Postman was created to design an API where the data of the MR.Olympia participants are consumed, 
 then in the server requests OkHttp was used as a client to visualize the status of the data, thus being able to display this information 
-by means of a LazyColumn (RecyclerView), also, If you see the project in web, you can go to this repository __[Mr.Old](https://github.com/Seb9809/mr-olympia-winners)__
+by means of a LazyColumn (RecyclerView), also, If you would see the project in web, you can go to this repository __[Mr.Old](https://github.com/Seb9809/mr-olympia-winners)__
 
 ## 
 
