@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MrOlympiaCompose</string>
+    <string name="name">name</string>
+    <string name="nickname">nickname</string>
+    <string name="birth">Year of birth</string>
+    <string name="nationality">nationality</string>
+    <string name="achievement">achievement</string>
+    <string name="favorite">favorite</string>
+    <string name="title_activity_about_me">AboutMeActivity</string>
 </resources>

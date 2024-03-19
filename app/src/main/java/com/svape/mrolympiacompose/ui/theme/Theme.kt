@@ -1,6 +1,6 @@
 package com.svape.mrolympiacompose.ui.theme
 
-import androidx.compose.foundation.isSystemInDarkTheme
+
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
@@ -9,7 +9,8 @@ import androidx.compose.runtime.Composable
 private val DarkColorPalette = darkColors(
     primary = Purple200,
     primaryVariant = Purple700,
-    secondary = Teal200
+    secondary = Teal200,
+    surface = graySurface
 )
 
 private val LightColorPalette = lightColors(
@@ -29,7 +30,7 @@ private val LightColorPalette = lightColors(
 
 @Composable
 fun MrOlympiaComposeTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
+    darkTheme: Boolean = true,
     content: @Composable () -> Unit
 ) {
     val colors = if (darkTheme) {

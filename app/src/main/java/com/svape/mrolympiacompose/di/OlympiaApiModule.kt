@@ -32,7 +32,7 @@ object OlympiaApiModule {
     @Singleton
     fun provideRetrofit(): Retrofit.Builder {
         return Retrofit.Builder()
-            .baseUrl(ApiConstants.BaseUrl)
+            .baseUrl(ApiConstants.BASE_URL)
             .addConverterFactory(MoshiConverterFactory.create())
             .client(client)
     }

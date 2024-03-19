@@ -5,7 +5,7 @@ import retrofit2.http.GET
 
 interface OlympiaApi {
 
-    @GET(ApiConstants.EndPoint)
+    @GET(ApiConstants.ENDPOINT)
     suspend fun getOlympia(): List<ClassicPhysique>
 
 }

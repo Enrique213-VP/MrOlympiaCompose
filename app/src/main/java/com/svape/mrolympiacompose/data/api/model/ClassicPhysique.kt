@@ -3,6 +3,7 @@ package com.svape.mrolympiacompose.data.api.model
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import java.io.Serializable
 
 @JsonClass(generateAdapter = true)
 data class ClassicPhysique(
@@ -16,8 +17,10 @@ data class ClassicPhysique(
     val imageTa: String,
     @Json(name = "name")
     val name: String,
+    @Json(name = "nickname")
+    val nickname: String,
     @Json(name = "nationality")
     val nationality: String,
-    @Json(name = "win_mister_olympia")
-    val winMisterOlympia: String
-)
+    @Json(name = "achievement")
+    val achievement: String
+) : Serializable
