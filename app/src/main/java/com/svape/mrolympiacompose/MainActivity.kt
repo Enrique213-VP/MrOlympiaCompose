@@ -1,5 +1,6 @@
 package com.svape.mrolympiacompose
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -26,6 +27,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.svape.mrolympiacompose.data.api.model.ClassicPhysique
+import com.svape.mrolympiacompose.ui.about_me.AboutMeActivity
 import com.svape.mrolympiacompose.ui.home.HomeSc
 import com.svape.mrolympiacompose.ui.profile.ProfileActivity
 import com.svape.mrolympiacompose.ui.theme.MrOlympiaComposeTheme
@@ -45,7 +47,6 @@ class MainActivity : ComponentActivity() {
                         startActivity(ProfileActivity.newIntent(this, it))
                     }
                 }
-                FloatingActionButtons()
             }
         }
     }
@@ -62,7 +63,7 @@ fun Home(navigateToProfile: (ClassicPhysique) -> Unit) {
 
 @Composable
 fun FloatingActionButtons() {
-    val ctx = LocalContext.current
+    val context = LocalContext.current
 
     // on the below line we are creating a column.
     Column(
@@ -85,8 +86,10 @@ fun FloatingActionButtons() {
         FloatingActionButton(
             // on below line we are adding on click for our fab
             onClick = {
+                val intent = Intent(context, AboutMeActivity::class.java)
+                context.startActivity(intent)
                 //val  intent = Intent(this, AboutMeActivity::class.java)
-                Toast.makeText(ctx, "Simple Floating Action Button", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Un poco sobre mí", Toast.LENGTH_SHORT).show()
             },
             // on below line we are adding
             // background color for our button

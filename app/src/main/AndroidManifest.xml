@@ -17,12 +17,14 @@
         android:theme="@style/Theme.MrOlympiaCompose"
         tools:targetApi="31">
         <activity
+            android:name=".ui.about_me.AboutMeActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.profile.ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.MrOlympiaCompose">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -2,8 +2,9 @@
 <resources>
 
     <style name="Theme.MrOlympiaCompose" parent="android:Theme.Material.Light.DarkActionBar">
-        <item name="android:statusBarColor">@color/grey</item>
+        <item name="android:statusBarColor">@color/barStatus</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/barStatus</item>
     </style>
 </resources>

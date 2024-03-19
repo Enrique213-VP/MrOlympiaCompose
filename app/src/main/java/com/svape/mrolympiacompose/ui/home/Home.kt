@@ -14,6 +14,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.svape.mrolympiacompose.FloatingActionButtons
 import com.svape.mrolympiacompose.core.Constants.LIST_TEST_TAG
 import com.svape.mrolympiacompose.data.api.model.ClassicPhysique
 import com.svape.mrolympiacompose.ui.home.itemOlympia.PeopleListItem
@@ -43,16 +44,19 @@ fun HomeSc(navigateToProfile: (ClassicPhysique) -> Unit) {
             if (state.isEmpty()) {
                 item {
                     CircularProgressIndicator(
-                        color = Color.Blue,
+                        color = Color.White,
                         modifier = Modifier.padding(16.dp)
                     )
                 }
             }
-
             items(state) { classic: ClassicPhysique ->
                 PeopleListItem(classicPhysique = classic, navigateToProfile)
             }
-
         }
+    }
+    if (state.isEmpty()) {
+        //TODO
+    } else {
+        FloatingActionButtons()
     }
 }
