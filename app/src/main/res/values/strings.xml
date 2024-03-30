@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MrOlympiaCompose</string>
+    <string name="app_name">Olympia</string>
     <string name="name">name</string>
     <string name="nickname">nickname</string>
     <string name="birth">Year of birth</string>

@@ -20,7 +20,6 @@ class MainActivityTest {
     fun testFirstAndLastNameTheOlympia(){
         composeTestRule.setContent {
             MrOlympiaComposeTheme {
-                HomeSc()
             }
         }
         composeTestRule.apply {

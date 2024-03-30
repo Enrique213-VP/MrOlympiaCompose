@@ -20,18 +20,26 @@ import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.State
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.produceState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.svape.mrolympiacompose.core.ConnectionStatus
+import com.svape.mrolympiacompose.core.currentConnectivityStatus
+import com.svape.mrolympiacompose.core.observeConnectivityAsFlow
 import com.svape.mrolympiacompose.data.api.model.ClassicPhysique
 import com.svape.mrolympiacompose.ui.about_me.AboutMeActivity
 import com.svape.mrolympiacompose.ui.home.HomeSc
+import com.svape.mrolympiacompose.ui.network.UnavailableScreen
 import com.svape.mrolympiacompose.ui.profile.ProfileActivity
 import com.svape.mrolympiacompose.ui.theme.MrOlympiaComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -52,11 +60,12 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@OptIn(ExperimentalCoroutinesApi::class)
 @Composable
 fun Home(navigateToProfile: (ClassicPhysique) -> Unit) {
     Scaffold(
         content = {
-            HomeSc(navigateToProfile = navigateToProfile)
+            CheckConnectivityStatus(navigateToProfile = navigateToProfile)
         }
     )
 }
@@ -96,12 +105,37 @@ fun FloatingActionButtons() {
             backgroundColor = Color.Gray,
             // on below line we are adding
             // color for our content of fab.
-            contentColor = MaterialTheme.colors.surface
+            contentColor = Color.White
         ) {
             // on below line we are
             // adding icon for button.
             Icon(Icons.Filled.Face, "")
         }
+    }
+}
+
+
+@ExperimentalCoroutinesApi
+@Composable
+fun CheckConnectivityStatus(navigateToProfile: (ClassicPhysique) -> Unit) {
+    val connection by connectivityStatus()
+
+    val isConnected = connection === ConnectionStatus.Available
+
+    if(isConnected){
+        HomeSc(navigateToProfile = navigateToProfile)
+    } else {
+        UnavailableScreen()
+    }
+}
+
+@ExperimentalCoroutinesApi
+@Composable
+fun connectivityStatus(): State<ConnectionStatus> {
+    val mCtx = LocalContext.current
+
+    return produceState(initialValue = mCtx.currentConnectivityStatus) {
+        mCtx.observeConnectivityAsFlow().collect { value = it }
     }
 }
 
