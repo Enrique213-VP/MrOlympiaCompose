@@ -74,10 +74,7 @@ fun Home(navigateToProfile: (ClassicPhysique) -> Unit) {
 fun FloatingActionButtons() {
     val context = LocalContext.current
 
-    // on the below line we are creating a column.
     Column(
-        // on below line we are adding a modifier to it
-        // and setting max size, max height and max width
         modifier = Modifier
             .fillMaxSize()
             .fillMaxHeight()

@@ -71,7 +71,6 @@ class AboutMeActivity : ComponentActivity() {
 }
 
 
-
 @Composable
 fun AboutMeContent() {
     val context = LocalContext.current
@@ -168,9 +167,6 @@ fun AboutMeContent() {
                     val intent = Intent(Intent.ACTION_VIEW)
                     intent.data = Uri.parse("https://www.linkedin.com/in/svap/")
                     startActivity(context, intent, null)
-                    // Finalizar la actividad actual (AboutMeActivity)
-                    (context as Activity).finish()
-                    Log.d("AboutMeActivity", "finish() called")
                 },
                 modifier = Modifier
                     .fillMaxWidth()
@@ -238,8 +234,10 @@ fun AboutMeContent() {
             Button(
                 onClick = {
                     val intent = Intent(context, MainActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
                     context.startActivity(intent)
-                          },
+                    (context as Activity).finish()
+                },
                 Modifier
                     .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
                     .fillMaxWidth()
