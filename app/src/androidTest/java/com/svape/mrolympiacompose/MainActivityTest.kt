@@ -4,7 +4,6 @@ import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.svape.mrolympiacompose.core.Constants.LIST_TEST_TAG
-import com.svape.mrolympiacompose.ui.home.HomeSc
 import com.svape.mrolympiacompose.ui.theme.MrOlympiaComposeTheme
 import org.junit.Rule
 import org.junit.Test

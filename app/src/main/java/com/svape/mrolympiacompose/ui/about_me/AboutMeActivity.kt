@@ -5,7 +5,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
@@ -47,8 +46,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat.startActivity
 import androidx.core.view.WindowInsetsCompat
-import com.svape.mrolympiacompose.MainActivity
 import com.svape.mrolympiacompose.R
+import com.svape.mrolympiacompose.MainActivity
 import com.svape.mrolympiacompose.ui.theme.MrOlympiaComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
