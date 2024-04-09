@@ -1,5 +1,5 @@
 <div align="center">
- <img src = "https://raw.githubusercontent.com/Enrique213-VP/MrOlympiaCompose/main/Assets/mrolympia.png?raw=true" width = "100%"/>
+ <img src = "https://raw.githubusercontent.com/Enrique213-VP/MrOlympiaCompose/main/Assets/Olym.png?raw=true" width = "100%"/>
 </div>
 
 <br/>
@@ -23,7 +23,7 @@ Jetpack Compose project about participants of Mr.Olympia that I considerate are 
 ## Download
 Go to the [Releases](https://github.com/Enrique213-VP/MrOlympiaCompose/releases) to download the latest APK.
 
-<img src="/Assets/gifolympia.gif" align="right" width="320"/>
+<img src="/Assets/olympia.gif" align="right" width="320"/>
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 25
@@ -60,13 +60,13 @@ by means of a LazyColumn (RecyclerView), also, If you would see the project in w
 
 Postman Mock           |  
 :-------------------------:
-![](https://github.com/Enrique213-VP/MrOlympiaCompose/blob/main/Assets/Postman/exampleRequest.jpg?raw=true)  
+![](https://github.com/Enrique213-VP/MrOlympiaCompose/blob/main/Assets/Postman/Request.png?raw=true)  
 
 ## 
 
 Code request OkHttp            |  Structure request Json
 :-------------------------:|:-------------------------: 
-![](https://github.com/Enrique213-VP/MrOlympiaCompose/blob/main/Assets/okHttp/firstReqeuestOkHttp.png?raw=true)  |  ![](https://github.com/Enrique213-VP/MrOlympiaCompose/blob/main/Assets/okHttp/requestOkHttp.png?raw=true)
+![](https://github.com/Enrique213-VP/MrOlympiaCompose/blob/main/Assets/okHttp/secondRequestOkHttp.png?raw=true)  |  ![](https://github.com/Enrique213-VP/MrOlympiaCompose/blob/main/Assets/okHttp/secondRequestOkHttp.png.png?raw=true)
 
 
 # License
