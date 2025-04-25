@@ -2,6 +2,6 @@ package com.svape.mrolympiacompose.data.api
 
 object ApiConstants {
 
-    const val BASE_URL = "https://717bd822-dcbc-4776-9bc8-e50f33789e61.mock.pstmn.io/"
+    const val BASE_URL = "https://29a1239e-0423-4d8c-a8db-d433f4f2e8ba.mock.pstmn.io"
     const val ENDPOINT = "all"
 }

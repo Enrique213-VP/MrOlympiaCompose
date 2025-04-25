@@ -1,4 +1,4 @@
-package com.svape
+package com.svape.mrolympiacompose
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

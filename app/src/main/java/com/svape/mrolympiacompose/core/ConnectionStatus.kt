@@ -1,6 +1,6 @@
 package com.svape.mrolympiacompose.core
 
 sealed class ConnectionStatus {
-    object Available: ConnectionStatus()
-    object Unavailable: ConnectionStatus()
+    data object Available: ConnectionStatus()
+    data object Unavailable: ConnectionStatus()
 }
