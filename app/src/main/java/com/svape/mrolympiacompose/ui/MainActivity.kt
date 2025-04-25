@@ -1,4 +1,4 @@
-package com.svape.mrolympiacompose
+package com.svape.mrolympiacompose.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,14 +11,14 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.FloatingActionButton
-import androidx.compose.material.Icon
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Scaffold
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.runtime.getValue
@@ -49,7 +49,7 @@ class MainActivity : ComponentActivity() {
             MrOlympiaComposeTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = MaterialTheme.colorScheme.background
                 ) {
                     Home {
                         startActivity(ProfileActivity.newIntent(this, it))
@@ -64,8 +64,12 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Home(navigateToProfile: (ClassicPhysique) -> Unit) {
     Scaffold(
-        content = {
-            CheckConnectivityStatus(navigateToProfile = navigateToProfile)
+        content = { paddingValues ->
+            Column(
+                modifier = Modifier.padding(paddingValues)
+            ) {
+                CheckConnectivityStatus(navigateToProfile = navigateToProfile)
+            }
         }
     )
 }
@@ -97,16 +101,13 @@ fun FloatingActionButtons() {
                 //val  intent = Intent(this, AboutMeActivity::class.java)
                 Toast.makeText(context, "Un poco sobre mí", Toast.LENGTH_SHORT).show()
             },
-            // on below line we are adding
-            // background color for our button
-            backgroundColor = Color.Gray,
-            // on below line we are adding
-            // color for our content of fab.
+            // on below line we are adding content color for our button
+            containerColor = Color.Gray,
             contentColor = Color.White
         ) {
             // on below line we are
             // adding icon for button.
-            Icon(Icons.Filled.Face, "")
+            Icon(Icons.Filled.Face, contentDescription = "About me")
         }
     }
 }

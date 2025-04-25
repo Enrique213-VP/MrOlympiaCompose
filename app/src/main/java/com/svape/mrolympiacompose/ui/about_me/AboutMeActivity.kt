@@ -24,12 +24,12 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.Button
-import androidx.compose.material.ButtonDefaults
-import androidx.compose.material.Icon
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -47,7 +47,7 @@ import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat.startActivity
 import androidx.core.view.WindowInsetsCompat
 import com.svape.mrolympiacompose.R
-import com.svape.mrolympiacompose.MainActivity
+import com.svape.mrolympiacompose.ui.MainActivity
 import com.svape.mrolympiacompose.ui.theme.MrOlympiaComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -74,7 +74,7 @@ class AboutMeActivity : ComponentActivity() {
 fun AboutMeContent() {
     val context = LocalContext.current
 
-    Surface(color = MaterialTheme.colors.background) {
+    Surface(color = MaterialTheme.colorScheme.background) {
         Column(
             modifier = Modifier
                 .fillMaxHeight()
@@ -170,8 +170,9 @@ fun AboutMeContent() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
-                    .height(55.dp), colors = ButtonDefaults.buttonColors(
-                    backgroundColor = Color(android.graphics.Color.parseColor("#0366c3"))
+                    .height(55.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(android.graphics.Color.parseColor("#0366c3"))
                 ),
                 shape = RoundedCornerShape(15)
             ) {
@@ -205,8 +206,9 @@ fun AboutMeContent() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
-                    .height(55.dp), colors = ButtonDefaults.buttonColors(
-                    backgroundColor = Color(android.graphics.Color.parseColor("#3f729b"))
+                    .height(55.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(android.graphics.Color.parseColor("#3f729b"))
                 ),
                 shape = RoundedCornerShape(15)
             ) {
@@ -237,11 +239,12 @@ fun AboutMeContent() {
                     context.startActivity(intent)
                     (context as Activity).finish()
                 },
-                Modifier
+                modifier = Modifier
                     .padding(start = 32.dp, end = 32.dp, top = 10.dp, bottom = 10.dp)
                     .fillMaxWidth()
-                    .height(60.dp), colors = ButtonDefaults.buttonColors(
-                    backgroundColor = Color(android.graphics.Color.parseColor("#808080"))
+                    .height(60.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(android.graphics.Color.parseColor("#808080"))
                 ),
                 shape = RoundedCornerShape(50)
             ) {

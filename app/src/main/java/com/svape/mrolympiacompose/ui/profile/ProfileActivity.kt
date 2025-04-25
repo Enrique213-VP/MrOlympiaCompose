@@ -6,12 +6,12 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.svape.mrolympiacompose.Greeting
+import com.svape.mrolympiacompose.ui.Greeting
 import com.svape.mrolympiacompose.data.api.model.ClassicPhysique
 import com.svape.mrolympiacompose.ui.theme.MrOlympiaComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -38,7 +38,7 @@ class ProfileActivity : ComponentActivity() {
             MrOlympiaComposeTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = MaterialTheme.colorScheme.background
                 ) {
                     ProfileDetail(classicPhysique = people)
                 }

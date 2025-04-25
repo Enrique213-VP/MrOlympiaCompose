@@ -1,21 +1,25 @@
 package com.svape.mrolympiacompose.core
 
+import android.Manifest
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkCapabilities
 import android.net.NetworkRequest
+import androidx.annotation.RequiresPermission
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
 
 
 val Context.currentConnectivityStatus: ConnectionStatus
+    @RequiresPermission(Manifest.permission.ACCESS_NETWORK_STATE)
     get() {
         val connectivityManager =
             getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         return getCurrentConnectivityStatus(connectivityManager)
     }
 
+@RequiresPermission(Manifest.permission.ACCESS_NETWORK_STATE)
 fun getCurrentConnectivityStatus(
     connectivityManager: ConnectivityManager
 ): ConnectionStatus {

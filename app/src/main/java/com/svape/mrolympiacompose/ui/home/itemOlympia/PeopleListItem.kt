@@ -9,9 +9,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Card
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -28,7 +29,7 @@ fun PeopleListItem(classicPhysique: ClassicPhysique, navigateToProfile: (Classic
         modifier = Modifier
             .padding(horizontal = 8.dp, vertical = 8.dp)
             .fillMaxWidth(),
-        elevation = 2.dp,
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
         shape = RoundedCornerShape(corner = CornerSize(16.dp))
     ) {
         Row(
@@ -41,13 +42,12 @@ fun PeopleListItem(classicPhysique: ClassicPhysique, navigateToProfile: (Classic
                     .fillMaxWidth()
                     .align(Alignment.CenterVertically)
             ) {
-                Text(text = classicPhysique.nickname, style = MaterialTheme.typography.h6)
-                Text(text = classicPhysique.nationality, style = MaterialTheme.typography.caption)
+                Text(text = classicPhysique.nickname, style = MaterialTheme.typography.titleLarge)
+                Text(text = classicPhysique.nationality, style = MaterialTheme.typography.bodySmall)
             }
         }
     }
 }
-
 
 @Composable
 private fun PeopleImage(classicPhysique: ClassicPhysique) {
